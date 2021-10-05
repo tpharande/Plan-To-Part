@@ -1,1 +1,2 @@
 # Plan-To-Part
+For my capstone project, I worked for the company Plan to Part. It is a software service powered by real people that helps you plan your end-of-life celebration and affairs. I worked on updating the help page. I changed the layout of the page to make it more user friendly and when the Chat with Us button was clicked, the chatbot would appear. I also created additional HTML pages for each section of questions. If the use selected a question in the Managing You Plan section, it would take them to another page where they can view the answer to that question.

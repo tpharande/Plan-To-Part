@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width= device-width, initial-scale = 1.0" />
+    <title>PLAN TO PART</title>
+    <link
+      rel="shortcut icon"
+      href="helppageimages/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.cs"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+    />
+     <link rel="stylesheet" href="helppagestyles/helppagemain.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="chat.css" />
+    <script src="chat.js"></script>
+    <style>
+      ul{
+        list-style-type:none;
+      }
+      li{
+      padding-top:5px;
+      }
+      .bold:hover{
+      font-weight: bold;
+      }
+      .questions:hover{ 
+      color:#164E87;
+      }
+      h3{
+      padding-top: 15px;
+      }
+      
+    </style>
+  </head>
+  
+	<header>
+    <!-- This is NavBar -->
+
+    <nav class="navbar">
+      <div class="inner-width">
+        <a href="#" class="logo"></a>
+        <button class="menu-toggler">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+		
+        <div class="navbar-menu">
+          <a href="https://web.njit.edu/~an543/planTopart/homePage.html"> Home</a>
+          <a href="https://web.njit.edu/~an543/planTopart/Dashboard_Sidebar/Membership_Section/membership.html"> Plans</a>
+          <a href="https://web.njit.edu/~an543/planTopart/contactHtml/contactUs.html"> Contact</a>
+          <a href="https://web.njit.edu/~an543/planTopart/homePage.html#about"> About Us</a>
+          <a href="https://web.njit.edu/~an543/planTopart/SecurityPage/security.html"> Security</a>
+          <a href="https://web.njit.edu/~an543/planTopart/helpPage/help.html"> Helps</a>
+          <a href="https://loginpage-plantopart.glitch.me/Loginpage.html"> Login </a>
+        </div>
+      </div>
+    </nav>
+	
+	<script>
+	$(document).ready(function(){
+  $(window).scroll(function(){
+    if(this.scrollY > 20){
+      $(".navbar").addClass("sticky");
+      $(".goTop").fadeIn();
+    }
+      
+    else{
+      $(".navbar").removeClass("sticky");
+      $(".goTop").fadeOut();
+    }
+      
+  });
+  
+  $(".goTop").click(function(){scroll(0,0)})
+  
+  $('.menu-toggler').click(function(){
+    $(this).toggleClass("active");
+    $(".navbar-menu").toggleClass("active");
+  });
+  
+  $(".works").magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    gallery: {enabled:true}
+  });
+  
+});
+
+	</script>
+	
+	</header>
+	
+	<body>
+ 
+    <!-- Your code goes here  --->
+    <section id="helpmain" class="dark">
+      <div class="inner-width">
+        <h1 class="section-title" style="font-size:40px;">
+          How Can We Help You?
+        </h1>
+        <br><br>
+        <center>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Have a Question?" name="search">
+            <button type="submit" onclick="onSearchClick()"><i class="fa fa-search" style="color:#FFFFFF"></i></button>
+        </div></center>
+        <table style="text-align:center;padding:50px 0px;">
+          <tr>
+            <th></th>
+            <th></th>
+          </tr>
+          <tr>
+            <td style="width:400px;"><div class="col-6 bold"><span class="image fit" style="text-align:center;font-size:20px;">
+            <a href="#">
+              <svg id="i-user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="50" height="50" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <path style="color:#164E87;" d="M22 11 C22 16 19 20 16 20 13 20 10 16 10 11 10 6 12 3 16 3 20 3 22 6 22 11 Z M4 30 L28 30 C28 21 22 20 16 20 10 20 4 21 4 30 Z" />
+              </svg><br>
+            Account & Billing</a>
+            <p style="color:black;font-size:18px;">Manage your Delighted plan & account access</p>
+            </span></div></td>
+            <td style="width:400px;" id="myBtn"><div class="col-6 bold"><span class="image fit" style="text-align:center;font-size:20px;">
+              <a href="https://web.njit.edu/~an543/planTopart/contactHtml/contactUs.html">
+              <svg id="i-telephone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="50" height="50" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path style="color:#164E87;" d="M3 12 C3 5 10 5 16 5 22 5 29 5 29 12 29 20 22 11 22 11 L10 11 C10 11 3 20 3 12 Z M11 14 C11 14 6 19 6 28 L26 28 C26 19 21 14 21 14 L11 14 Z" />
+                <circle style="color:#164E87;" cx="16" cy="21" r="4" />
+              </svg><br>
+            Give us a call</a>
+            <p style="color:black;font-size:18px;">Call us to answer any questions</p>
+            </span></div></td>
+            <td style="width:400px;"><div class="col-6 bold"><span class="image fit" style="text-align:center;font-size:20px;">
+            <!--
+            <img src="images/pic02.jpg" alt="" />
+            -->
+            <a href="https://web.njit.edu/~tkp7/CS491/PlanToPart2/SecurityPage/security.html">
+              <svg id="i-lock" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="50" height="50" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path style="color:#164E87;" d="M5 15 L5 30 27 30 27 15 Z M9 15 C9 9 9 5 16 5 23 5 23 9 23 15 M16 20 L16 23" />
+                <circle style="color:#164E87;" cx="16" cy="24" r="1" />
+              </svg><br>
+              Security & Privacy</a> 
+            <p style="color:black;font-size:18px;"> Keep your Delighted account & data secure</p>             
+            </span></div>
+            </td>
+            <td style="width:400px;"><div class="col-6 bold"><span class="image fit" style="text-align: center;font-size:20px;">
+            <a href="#">
+              <svg onClick="showChat()" id="i-msg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="50" height="50" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path style="color:#164E87;" d="M2 4 L30 4 30 22 16 22 8 29 8 22 2 22 Z" />
+              </svg><br>
+              Chat with us</a> 
+            <p style="color:black;font-size:18px;">Email us to answer any questions</p>             
+            </span></div></td>
+          </tr>
+      </table>
+      <br><br>
+        
+        <table style="text-align:center;">
+          <tr>
+            <th></th>
+            <th></th>
+          </tr>
+          <td style="width:800px;padding-left:50px;">
+        
+          <h2>Creating a Plan To Part Account</h2><br>
+          <ul style="font-size:18px;">
+              <li><a href="/~tkp7/CS491/PlanToPart2/accountPage/account.html#aq1" class="questions">I signed up, but I haven't received my confirmation email.</li>
+              <li><a href="/~tkp7/CS491/PlanToPart2/accountPage/account.html#aq2" class="questions">Can I still have a Plan To Part if I'm not from the United States?</li>
+              <li><a href="/~tkp7/CS491/PlanToPart2/accountPage/account.html#aq3" class="questions">Why am I asked for a phone number to sign up?</li>
+              <li><a href="/~tkp7/CS491/PlanToPart2/accountPage/account.html#aq4" class="questions">How do I reset my password?</li>
+              <li><a href="/~tkp7/CS491/PlanToPart2/accountPage/account.html#aq5" class="questions">Why am I unable to login to my account?</li>
+          </ul>
+          </td>
+         
+          <td style="width:800px;padding-right:50px;">
+          <h2>Trial Accounts & Billing</h2><br>
+          <ul style="font-size:18px;">
+              <li><a href="/~tkp7/CS491/PlanToPart2/billingPage/billing.html#bq1" class="questions">What's included in a Plan To Part subscription?</a></li>
+              <li><a href="/~tkp7/CS491/PlanToPart2/billingPage/billing.html#bq2" class="questions">How much does a Plan To Part cost?</a></li>
+              <li><a href="/~tkp7/CS491/PlanToPart2/billingPage/billing.html#bq3" class="questions">How does billing work?</a></li>
+              <li><a href="/~tkp7/CS491/PlanToPart2/billingPage/billing.html#bq4" class="questions">If I stop paying for my account, what happens to my Plan To Part?</a></li>
+              <li><a href="/~tkp7/CS491/PlanToPart2/billingPage/billing.html#bq5" class="questions">How do I cancel my subscription?</a></li>
+          </ul>
+          </td>
+          </tr>
+
+          <tr>
+         <td style="width:800px;padding-left:50px;">
+         <br><br><br><br>
+          <h2>Managing Your Plan</h2><br>
+          <ul style="font-size:18px;">
+              <li><a href="/~tkp7/CS491/PlanToPart2/planPage/plan.html#pq1" class="questions">I've created an account, but I'm not sure how to get started.</a></li>
+              <li><a href="/~tkp7/CS491/PlanToPart2/planPage/plan.html#pq2" class="questions">I forgot my password. What should I do?</a></li>
+              <li><a href="/~tkp7/CS491/PlanToPart2/planPage/plan.html#pq3" class="questions">How do I print or download my Plan To Part?</a></li>
+              <li><a href="/~tkp7/CS491/PlanToPart2/planPage/plan.html#pq4" class="questions">Can I change the order in which my data is presented in my Plan to Part?</a></li>
+              <li><a href="/~tkp7/CS491/PlanToPart2/planPage/plan.html#pq5" class="questions">How do I import my financial account information from my bank?</a></li>
+              <li><a href="/~tkp7/CS491/PlanToPart2/planPage/plan.html#pq6" class="questions">Can other people edit my Plan To Part?</a></li>
+          </ul>
+          </td>
+         
+           <td style="width:800px;padding-right:50px;">
+           <br><br><br><br>
+            <h2>Security</h2><br>
+            <ul style="font-size:18px;">
+              <li><a href="/~tkp7/CS491/PlanToPart2/SecurityPage/security.html#sq1" class="questions">What does "bank level security" mean?</a></li>
+              <li><a href="/~tkp7/CS491/PlanToPart2/SecurityPage/security.html#sq2" class="questions">Who will have access to my sensitive personal information?</a></li>
+              <li><a href="/~tkp7/CS491/PlanToPart2/SecurityPage/security.html#sq3" class="questions">What happens to my information if I want to delete my Plan To Part account?</a></li>
+              <li><a href="/~tkp7/CS491/PlanToPart2/SecurityPage/security.html#sq4" class="questions">What happens to my personal information if I die?</a></li>
+              <li><a href="/~tkp7/CS491/PlanToPart2/SecurityPage/security.html#sq5" class="questions">What's two-step verification all about?</a></li>
+              <li><a href="/~tkp7/CS491/PlanToPart2/SecurityPage/security.html#sq6" class="questions">How does two-step verification work?</a></li>
+            </ul>
+            </td>
+            </tr>
+            </table>
+     
+      </div><br>
+    </section>
+    <script>
+    
+    var questions = ["I signed up but I haven't received my confirmation email",
+    "Can I still have a Plan to Part if I'm not from the US?",
+    "Why am I asked for a phone number to sign up?",
+    "How do I reset my password?",
+    "Why am I unable to login to my account?",
+    "What’s included in a Plan to Part subscription?",
+    "How much does a Plan To Part cost?",
+    "How does billing work?",
+    "If I stop paying for my account, what happens to my Plan To Part?",
+    "How do I cancel my subscription?",
+    "I've created an account",
+    "I forgot my password.",
+    "How do I print or download my Plan To Part?",
+    "Can I change the order in which my data is presented in my Plan To Part?",
+    "How do I import my financial account information from my bank?",
+    "Can other people edit my Plan To Part?",
+    "What does 'bank level security' mean?",
+    "Who will have access to my sensitive personal information?",
+    "What happens information delete my account?",
+    "What happens to my personal information if I die?",
+    "What's two-step verification all about?",
+    "How does two-step verification work?"]
+    
+    function onSearchClick(){
+    if(document.getElementById("search").value == ""){document.getElementById("search").placeholder = "Please enter a question!!"; return;}
+    var max = 0;
+    var val;
+    var arr;
+    var id = 0;
+    for (i = 0; i < questions.length; i++){
+       val = 0;
+       arr = document.getElementById("search").value.split(" ");
+       for (j = 0; j < arr.length; j++){
+         if(questions[i].search(arr[j])!= -1)
+           val++;}
+       if(val>max)
+         {max=val; id = i;}
+        }
+       if(id<=4)
+       {window.location.href = "https://web.njit.edu/~tkp7/CS491/PlanToPart2/accountPage/account.html#aq"+(id+1);}
+       else if(id<=9)
+       {window.location.href = "https://web.njit.edu/~tkp7/CS491/PlanToPart2/billingPage/billing.html#bq"+(id-4);}
+       else if(id<=15)
+       {window.location.href = "https://web.njit.edu/~tkp7/CS491/PlanToPart2/planPage/plan.html#pq"+(id-9);}
+       else
+       {window.location.href = "https://web.njit.edu/~tkp7/CS491/PlanToPart2/SecurityPage/security.html#sq"+(id-15);}}
+    
+    </script>
+
+    <!-- Footer--->
+
+    <footer>
+      <div class="inner-width">
+        <div class="policy">
+          <a class="bt" href="#">About Us</a>
+          <a class="bt" href="#">Plans</a>
+          <a class="bt" href="#">Privacy</a>
+        </div>
+
+        <div class="copyright">
+          &copy; | 2020, <a href="#">Plan To Part </a>
+        </div>
+
+        <div class="sm">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+    <!--Go Back Top-->
+    <button class="goTop fas fa-arrow-up"></button>
+
+    <div id="chatbox" class="chatbox">
+      <div class="header"> Ask Andy  <div class="exit" id="exit" onclick="showChat()"> Exit </div></div>
+      <div class="agent">Click here if you want to start a conversation with one of our agents</div>
+      <div id= "chatarea" class="chatarea"> 
+      </div>
+      <div class="textarea"> 
+          <textarea id="message" class="message" placeholder="enter text here"></textarea>
+          <input onclick="submit()" class="submit" id="submit" type="image" src="send.png">
+      </div>
+  </div>
+  </div>
+  </body>
+</html>
